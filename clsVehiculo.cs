@@ -20,7 +20,7 @@ namespace pryEmilianoFernandezEtapa2
 
         //Metodos
 
-        public void crearVehiculo(PictureBox Vehiculo) 
+        public void crearVehiculo(PictureBox Vehiculo) //pct del formulario
         {
 
             PictureBox ImagenVehiculo = new PictureBox(); //instancio en memora imagen
@@ -41,10 +41,10 @@ namespace pryEmilianoFernandezEtapa2
             ImagenVehiculo.Image = Imagen;
             ImagenVehiculo.SizeMode = PictureBoxSizeMode.StretchImage;
             ImagenVehiculo.Location = Vehiculo.Location;
-            ImagenVehiculo.Parent.Controls.Add(ImagenVehiculo);
+            ImagenVehiculo.Size = Vehiculo.Size;
+            Vehiculo.Parent.Controls.Add(ImagenVehiculo);
 
             ImagenVehiculo.BringToFront();
-
             
         }
     }

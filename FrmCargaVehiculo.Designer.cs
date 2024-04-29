@@ -47,7 +47,6 @@
             // 
             PctVehiculo.BackColor = Color.White;
             PctVehiculo.BorderStyle = BorderStyle.Fixed3D;
-            PctVehiculo.Image = Properties.Resources.jay_jay_removebg_preview;
             PctVehiculo.Location = new Point(12, 12);
             PctVehiculo.Name = "PctVehiculo";
             PctVehiculo.Size = new Size(341, 260);
